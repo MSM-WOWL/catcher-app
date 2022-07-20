@@ -1,24 +1,39 @@
-# README
+## アプリケーション名
+Catcher App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション概要
+ゲームセンター等に置かれているUFOキャッチャーで、何を取ったのか(商品)、いくらで取ったのか、どこで取ったのかをユーザー間で共有することができます。
 
-Things you may want to cover:
+## URL
+現在未実装
 
-* Ruby version
+## テスト用アカウント
+現在未実装
 
-* System dependencies
+## 利用方法
 
-* Configuration
+### 在庫状況投稿
+1.トップページよりユーザー登録ボタンをクリックし、ユーザー登録を行います。(ニックネーム・メールアドレス・パスワード)
+2.新規投稿ボタンをクリックし、取った商品(事前に管理者によって用意済み)と取った金額、取ったお店と任意でコメントを入力し、投稿ボタンをクリックします。
 
-* Database creation
+## アプリケーションを作成した背景
+同じ趣味を通じて知り合った友人数人に、自分たち特有の課題は何かあるだろうかと質問したのですが、その内の一つが、「UFOキャッチャーにあるプライズ(商品)が、他の人はどこでいくらくらいで取ったのかが分からず、実際に自分が取る際の指標となるものがあれば良いかもしれない」という回答でした。商品自体の入荷日はメーカーのHPで確認することが出来ますし、お店に入荷した際も小売店側が自社のHPやSNSで発信するものの、それがいくら位で取れるのかは、あまり聞く事がないと感じました。そこでユーザーが、それ専門に特化したアプリを使用すれば、その問題を少しでも解消出来るのではと考え、開発することにしました。
 
-* Database initialization
+## 洗い出した要件
+https://docs.google.com/spreadsheets/d/1eL7DEtJ7IPrYbeki_kw1oIi4hCiZk5N9yUTC7H92iS0/edit#gid=982722306
 
-* How to run the test suite
+## 実装した機能についての画像やGIFおよびその説明
 
-* Services (job queues, cache servers, search engines, etc.)
+## 実装予定の機能
+登録されている商品がどのくらいの金額で取られているかの平均値を出す予定。
 
-* Deployment instructions
+## データベース設計
 
-* ...
+## 画面遷移図
+
+## 開発環境
+
+## ローカルでの動作方法
+
+## 工夫したポイント
+
