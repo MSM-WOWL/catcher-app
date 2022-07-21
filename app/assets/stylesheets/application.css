@@ -8,3 +8,13 @@ body {
   border-radius: 0px;
 }
 
+.userdata {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
