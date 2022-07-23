@@ -1,23 +1,14 @@
 class PostsController < ApplicationController
-
-
-  def new
-    @product = Product.find(params[:product_id])
-    @post = Post.new
-  end
-
   def create
-    @product = Product.find(params[:product_id])
-    @post = Post.new(post_params)
-    if @post.save
+    if post = Post.create(post_params)
       redirect_to root_path
     else
-      render :new
+      render product_path
     end
   end
 
   def post_params
-    params.require(:post).permit(:store_name, :price, :comment).merge(user_id: current_user.id, product_id: @product.id )
+    params.require(:post).permit(:store_name, :price, :comment).merge(user_id: current_user.id, product_id: params[:product_id])
   end
 
 end

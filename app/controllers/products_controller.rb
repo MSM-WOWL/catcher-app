@@ -18,6 +18,8 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    @post = Post.new
+    @posts = @product.posts
   end
 
   private
