@@ -1,5 +1,6 @@
 class Product < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
+  has_many :posts
   belongs_to :category
   has_one_attached :image
 
