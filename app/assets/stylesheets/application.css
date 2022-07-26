@@ -2,6 +2,13 @@ body {
   font-family: 'DotGothic16', sans-serif;
 }
 
+.background {
+
+ background-color:rgba(255,255,255,0.7);
+ background-blend-mode:lighten;
+ background-size: 100%;
+}
+
 .btn {
   padding: 14px 18px;
   border: 2px;
@@ -18,3 +25,54 @@ body {
   margin-bottom: 10px;
 }
 
+.product-image {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.submit {
+  margin-top: 10px;
+}
+
+.product {
+  border: 2px solid black;
+  margin: 0 5px;
+  border-radius: 5px;
+  margin: 10px 10px;
+}
+
+.product-name {
+  padding-left: 20px;
+}
+
+.product-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.user-posts {
+  margin-top: 10px;
+}
+
+.user-post {
+  border: 2px solid black;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.left-content {
+  margin-right: 20px;
+}

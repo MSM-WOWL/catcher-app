@@ -1,18 +1,17 @@
-<div class="contents" id="contents">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7">
-        <h1>CatcherApp</h1>
-          <div>
-           <% @products.each do |product| %>
-            <%= link_to product_path(product.id) do %>
-              <%= image_tag product.image %>
-            <% end %>
-              <%= product.product_name %>
-              <%= product.category.name %>
-            <% end %>
-          </div>
+<div class="products">
+  <% @products.each do |product| %>
+  <%= link_to product_path(product.id) do %>
+    <div class="product">
+      <div>
+        <%= image_tag product.image, class:"product-image" %>
+      </div>
+    <% end %>
+      <div>
+        <p class="product-name"><%= product.product_name %></p>
+      </div>
+      <div>
+        <p class="product-name"><%= product.category.name %></p>
       </div>
     </div>
-  </div>
+  <% end %>
 </div>
