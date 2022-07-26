@@ -1,34 +1,56 @@
-<div>
-  <%= image_tag @product.image %>
-  <%= @product.product_name %>
-  <%= @product.category.name %>
-</div>
+<div class="product-detail">
+  <div class="left-content">
+    <div class="product">
+      <div>
+        <%= image_tag @product.image, class:"product-image"%>
+      </div>
+      <div>
+      <%= @product.product_name %>
+      </div>
+      <div>
+        <%= @product.category.name %>
+      </div>
+    </div>
 
-<div>
-  <%= form_with(model: [@product, @post], local: true) do |f| %>
-    <div>
-      <%= f.label :store_name, "店名" %>
-      <%= f.text_field :store_name %>
+    <div class="form">
+      <%= form_with(model: [@product, @post], local: true) do |f| %>
+        <div>
+          <%= f.label :store_name, "店名" %><br/>
+          <%= f.text_field :store_name %>
+        </div>
+        <div>
+          <%= f.label :price, "金額" %><br/>
+          <%= f.text_field :price %>
+        </div>
+        <div>
+          <%= f.label :comment, "コメント" %><br/>
+          <%= f.text_field :comment %>
+        </div>
+        <div class="submit">
+          <%= f.submit "送信する" %>
+        </div>
+      <% end %>
     </div>
-    <div>
-      <%= f.label :price, "金額" %>
-      <%= f.text_field :price %>
-    </div>
-    <div>
-      <%= f.label :comment, "コメント" %>
-      <%= f.text_field :comment %>
-    </div>
-    <div>
-      <%= f.submit "送信する" %>
-    </div>
-  <% end %>
-</div>
+  </div>
 
-<div>
-  <% @posts.each do |post| %>
-    <%= post.store_name%>
-    <%= post.price %>
-    <%= post.comment %>
-    <%= post.user.nickname%>
-  <% end %>
+  <div class="right-content">
+    <div class="user-posts">
+      <% @posts.each do |post| %>
+        <div class="user-post">
+          <div>
+            <%= post.store_name%>
+          </div>
+          <div>
+            <%= post.price %>
+          </div>
+          <div>
+            <%= post.comment %>
+          </div>
+          <div>
+            <%= post.user.nickname%>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
