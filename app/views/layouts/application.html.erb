@@ -32,10 +32,11 @@
               <li class="nav-item">
                 <a><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class:"nav-link" %></a>
               </li>
-              <li class="nav-item">
-                <a><%= link_to '管理者画面', new_product_path, class:"nav-link" %></a>
-              </li>
-
+              <% if current_user == @user || current_user.admin? %>
+                <li class="nav-item">
+                  <a><%= link_to '管理者画面', new_product_path, class:"nav-link" %></a>
+                </li>
+              <% end %>
             <% else %>
               <li class="nav-item">
                 <a><%= link_to '新規登録', new_user_registration_path, class:"nav-link" %></a>

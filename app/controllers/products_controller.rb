@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def new
+    @user = User.find(params[:id])
     @product = Product.new
   end
 
