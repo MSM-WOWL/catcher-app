@@ -12,25 +12,27 @@
       </div>
     </div>
 
-    <div class="form">
-      <%= form_with(model: [@product, @post], local: true) do |f| %>
-        <div>
-          <%= f.label :store_name, "店名" %><br/>
-          <%= f.text_field :store_name %>
-        </div>
-        <div>
-          <%= f.label :price, "金額" %><br/>
-          <%= f.text_field :price %>
-        </div>
-        <div>
-          <%= f.label :comment, "コメント" %><br/>
-          <%= f.text_field :comment %>
-        </div>
-        <div class="submit">
-          <%= f.submit "送信する" %>
-        </div>
-      <% end %>
-    </div>
+    <% if user_signed_in? %>
+      <div class="form">
+        <%= form_with(model: [@product, @post], local: true) do |f| %>
+          <div>
+            <%= f.label :store_name, "店名" %><br/>
+            <%= f.text_field :store_name %>
+          </div>
+          <div>
+            <%= f.label :price, "金額" %><br/>
+            <%= f.text_field :price %>
+          </div>
+          <div>
+            <%= f.label :comment, "コメント" %><br/>
+            <%= f.text_field :comment %>
+          </div>
+          <div class="submit">
+            <%= f.submit "送信する" %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
   </div>
 
   <div class="right-content">
