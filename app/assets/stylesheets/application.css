@@ -2,13 +2,6 @@ body {
   font-family: 'DotGothic16', sans-serif;
 }
 
-.background {
-
- background-color:rgba(255,255,255,0.7);
- background-blend-mode:lighten;
- background-size: 100%;
-}
-
 .btn {
   padding: 14px 18px;
   border: 2px;
@@ -25,6 +18,17 @@ body {
   margin-bottom: 10px;
 }
 
+.products-field {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  background-image: url("ufoc00.jpg");
+  background-color: rgba(255,255,255,0.9);
+  background-blend-mode: lighten;
+}
+
 .product-image {
   width: 200px;
   height: 200px;
@@ -34,6 +38,23 @@ body {
 .products {
   display: flex;
   flex-wrap: wrap;
+  width: 70vw;
+}
+
+.product {
+  border: 2px solid black;
+  margin: 0 5px;
+  border-radius: 5px;
+  margin: 10px 10px;
+  height: 35vh;
+}
+
+.product-show {
+  border: 2px solid black;
+  margin: 0 5px;
+  border-radius: 5px;
+  margin: 10px 10px;
+  height: 35vh;
 }
 
 .form {
@@ -46,20 +67,19 @@ body {
   margin-top: 10px;
 }
 
-.product {
-  border: 2px solid black;
-  margin: 0 5px;
-  border-radius: 5px;
-  margin: 10px 10px;
-}
-
 .product-name {
   padding-left: 20px;
 }
 
 .product-detail {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  padding-top: 20px;
+  background-image: url("ufoc01.jpg");
+  background-color: rgba(255,255,255,0.9);
+  background-blend-mode: lighten;
 }
 
 .user-posts {
@@ -78,7 +98,19 @@ body {
 }
 
 .content {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  padding-top: 30px;
+  background-image: url("ufoc02.jpg");
+  background-color: rgba(255,255,255,0.9);
+  background-blend-mode: lighten;
+}
+
+.register {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  height: 35vh;
 }

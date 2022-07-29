@@ -1,17 +1,19 @@
-<div class="products">
-  <% @products.each do |product| %>
-  <%= link_to product_path(product.id) do %>
-    <div class="product">
-      <div>
-        <%= image_tag product.image, class:"product-image" %>
+<div class="products-field">
+  <div class="products">
+    <% @products.each do |product| %>
+    <%= link_to product_path(product.id) do %>
+      <div class="product">
+        <div>
+          <%= image_tag product.image, class:"product-image" %>
+        </div>
+      <% end %>
+        <div>
+          <p class="product-name"><%= product.product_name %></p>
+        </div>
+        <div>
+          <p class="product-name"><%= product.category.name %></p>
+        </div>
       </div>
     <% end %>
-      <div>
-        <p class="product-name"><%= product.product_name %></p>
-      </div>
-      <div>
-        <p class="product-name"><%= product.category.name %></p>
-      </div>
-    </div>
-  <% end %>
+  </div>
 </div>

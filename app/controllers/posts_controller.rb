@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def create
     if post = Post.create(post_params)
-      redirect_to root_path
+      redirect_to "/products/#{post.product.id}"
     else
       render product_path
     end
