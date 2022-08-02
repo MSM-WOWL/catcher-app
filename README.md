@@ -6,11 +6,19 @@ Catcher App
 
 ## URL
 https://catcher-app-38145.herokuapp.com/  
-(ローカル環境と本番環境で挙動が異なっている為、現在調査及び修正中)
 
 ## テスト用アカウント
-Basic認証ID : admin  
-Basic認証パスワード : 0000
+・Basic認証  
+ID : admin  
+パスワード : 0000  
+  
+・アプリ内管理者  
+メールアドレス : admin@test.com  
+パスワード : admin0  
+
+・アプリ内一般ユーザー  
+メールアドレス : test@test.com  
+パスワード : test00  
 
 ## 利用方法
 
