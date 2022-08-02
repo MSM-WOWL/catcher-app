@@ -5,12 +5,10 @@ Catcher App
 ゲームセンター等に置かれているUFOキャッチャーで、何を取ったのか(商品)、いくらで取ったのか、どこで取ったのかをユーザー間で共有することができます。
 
 ## URL
-https://catcher-app-38145.herokuapp.com/
-(ローカル環境と本番環境で挙動が異なっている為、修正中です)
+https://catcher-app-38145.herokuapp.com/  (ローカル環境と本番環境で挙動が異なっている為、修正中です)
 
 ## テスト用アカウント
-Basic認証ID : admin
-Basic認証パスワード : 0000
+Basic認証ID : admin  Basic認証パスワード : 0000
 
 ## 利用方法
 
