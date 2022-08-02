@@ -38,19 +38,19 @@ https://docs.google.com/spreadsheets/d/1eL7DEtJ7IPrYbeki_kw1oIi4hCiZk5N9yUTC7H92
 
 ### 未ログイン時の挙動 (景品詳細は閲覧できるが、投稿フォームは表示されない)
 
-[![Image from Gyazo](https://i.gyazo.com/de95163d57e4d513f80adb7beca0d47d.gif)](https://gyazo.com/de95163d57e4d513f80adb7beca0d47d)
+[![Image from Gyazo](https://i.gyazo.com/de95163d57e4d513f80adb7beca0d47d.gif)](https://gyazo.com/de95163d57e4d513f80adb7beca0d47d)  
 
 ### 一般ユーザーログイン時の挙動 (景品詳細ページに投稿フォームが表示され、投稿できる)
 
-[![Image from Gyazo](https://i.gyazo.com/c8ca6333f5864eb4face5b24d53522a0.gif)](https://gyazo.com/c8ca6333f5864eb4face5b24d53522a0)
+[![Image from Gyazo](https://i.gyazo.com/c8ca6333f5864eb4face5b24d53522a0.gif)](https://gyazo.com/c8ca6333f5864eb4face5b24d53522a0)  
 
 ### 管理者ログイン時の挙動 (管理者画面が表示され、景品の登録が可能になる)
 
-[![Image from Gyazo](https://i.gyazo.com/ce72a3dc7b31ffe8e938e73998b3fb7b.gif)](https://gyazo.com/ce72a3dc7b31ffe8e938e73998b3fb7b)
+[![Image from Gyazo](https://i.gyazo.com/ce72a3dc7b31ffe8e938e73998b3fb7b.gif)](https://gyazo.com/ce72a3dc7b31ffe8e938e73998b3fb7b)  
 
 ### 景品登録の挙動 (景品を登録するとトップページに追加される)
 
-[![Image from Gyazo](https://i.gyazo.com/68846d2f365d70e2c240461eda8aad2d.gif)](https://gyazo.com/68846d2f365d70e2c240461eda8aad2d)
+[![Image from Gyazo](https://i.gyazo.com/68846d2f365d70e2c240461eda8aad2d.gif)](https://gyazo.com/68846d2f365d70e2c240461eda8aad2d)  
 
 ## 実装予定の機能
 登録されていない景品があるかもしれないと仮定して、景品を登録してもらえる様に、管理者への連絡フォームを追加する。また、登録されている各景品が、それぞれどのくらいの金額で取られているか、その平均値を出してみたいとも考えている。
