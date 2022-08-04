@@ -61,7 +61,7 @@ https://docs.google.com/spreadsheets/d/1eL7DEtJ7IPrYbeki_kw1oIi4hCiZk5N9yUTC7H92
 [![Image from Gyazo](https://i.gyazo.com/68846d2f365d70e2c240461eda8aad2d.gif)](https://gyazo.com/68846d2f365d70e2c240461eda8aad2d)  
 
 ## 実装予定の機能
-登録されていない景品があるかもしれないと仮定して、景品を登録してもらえる様に、管理者への連絡フォームを追加したいと考えています。また、管理者が投稿を見て、それが迷惑だと判断した場合は、管理者権限で消せる様にすることも考えています。
+登録されていない景品があるかもしれないと仮定して、景品を登録してもらえる様に、管理者への連絡フォームを追加したいと考えています。他にも、管理者が投稿を見て、それが迷惑だと判断した場合は、管理者権限で消せる様にすることも考えています。また、Rspecを用いてテストコードも導入予定です。
 
 ## データベース設計
 <img src="app/assets/images/catcher-app_ER.png">
