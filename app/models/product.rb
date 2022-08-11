@@ -5,5 +5,6 @@ class Product < ApplicationRecord
   has_one_attached :image
 
   validates :product_name, presence: true
-  validates :category_id, numericality: { other_than: 1 }
+  validates :category_id, presence: true, numericality: { other_than: 1 , "can't be blank"}
+  validates :image, presence: true
 end
