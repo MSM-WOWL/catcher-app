@@ -28,6 +28,11 @@ RSpec.describe Product, type: :model do
         @product.valid?
         expect(@product.errors.full_messages).to include("Image can't be blank")
       end
+      it 'category_idが1の場合は登録できない' do
+        @product.category_id = 1
+        @product.valid?
+        expect(@product.errors.full_messages).to include("Category can't be blank")
+      end
     end
   end
 end
