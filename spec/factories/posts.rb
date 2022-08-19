@@ -4,5 +4,6 @@ FactoryBot.define do
     price { 1000 }
     comment {"サンプルコメント"}
     association :user
+    association :product
   end
 end
