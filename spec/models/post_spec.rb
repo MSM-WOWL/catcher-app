@@ -27,6 +27,16 @@ RSpec.describe Post, type: :model do
         @post.valid?
         expect(@post.errors.full_messages).to include("Price can't be blank")
       end
+      it 'userが存在しなければ登録できない' do
+        @post.user = nil
+        @post.valid?
+        expect(@post.errors.full_messages).to include("User must exist")
+      end
+      it 'productが存在しなければ登録できない' do
+        @post.product = nil
+        @post.valid?
+        expect(@post.errors.full_messages).to include("Product must exist")
+      end
     end
   end
 end
