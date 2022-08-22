@@ -37,6 +37,16 @@ RSpec.describe Post, type: :model do
         @post.valid?
         expect(@post.errors.full_messages).to include("Product must exist")
       end
+      it 'priceが全角数字だと登録できない' do
+        @post.price = "１０００"
+        @post.valid?
+        expect(@post.errors.full_messages).to include("Price is not a number")
+      end
+      it 'priceが半角英字だと登録できない' do
+        @post.price = "abcd"
+        @post.valid?
+        expect(@post.errors.full_messages).to include("Price is not a number")
+      end
     end
   end
 end
