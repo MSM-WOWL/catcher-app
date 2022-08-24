@@ -47,6 +47,11 @@ RSpec.describe Post, type: :model do
         @post.valid?
         expect(@post.errors.full_messages).to include("Price is not a number")
       end
+      it 'priceが半角英数字混合だと登録できない' do
+        @post.price = "1000yen"
+        @post.valid?
+        expect(@post.errors.full_messages).to include("Price is not a number")
+      end
     end
   end
 end
